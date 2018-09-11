@@ -4,8 +4,8 @@ def reformat_languages(languages)
     lang_hash.each do |lang, type_hash|
       type_hash.each do |type_label, type|
         new_hash[lang] = {
-          type_label.to_sym => type,
-          :style => style.to_sym
+          type_label => type,
+          :style => style
         }
       end
     end
