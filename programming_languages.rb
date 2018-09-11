@@ -10,7 +10,7 @@ def reformat_languages(languages)
         else
           new_hash[lang] = {
             type_label => type,
-            :style => style
+            :style => [style]
           }
         end
       end
