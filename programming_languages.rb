@@ -7,6 +7,7 @@ def reformat_languages(languages)
         if new_hash.key?(lang)
           style_arr << style
           new_hash[lang][:style] = style_arr
+          puts "booty"
         else
           style_arr << style
           new_hash[lang] = {
