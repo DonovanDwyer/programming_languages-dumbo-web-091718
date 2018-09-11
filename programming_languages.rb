@@ -13,7 +13,7 @@ def reformat_languages(languages)
       new_hash[lang][:style] = style_arr
     end
   end
-  new_hash
+  puts new_hash
 end
 
 languages = {
@@ -47,3 +47,5 @@ languages = {
  
   }
 }
+
+reformat_languages(languages)
