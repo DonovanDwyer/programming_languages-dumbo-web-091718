@@ -9,11 +9,12 @@ def reformat_languages(languages)
           type_label => type,
           :style => []
         }
+        puts style_arr
       end
       new_hash[lang][:style] = style_arr
     end
   end
-  puts new_hash
+  #puts new_hash
 end
 
 languages = {
