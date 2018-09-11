@@ -4,14 +4,15 @@ def reformat_languages(languages)
     lang_hash.each do |lang, type_hash|
       style_arr = []
       type_hash.each do |type_label, type|
-        style_arr << style
-        new_hash[lang] = {
-          type_label => type,
-          :style => []
-        }
+        if new_hash.include?(lang)
+          new_hash[lang][:style] = style_arr << style
+        else
+          new_hash[lang] = {
+            type_label => type,
+            :style => style_arr
+          }
         puts style_arr
       end
-      new_hash[lang][:style] = style_arr
     end
   end
   #puts new_hash
