@@ -7,7 +7,7 @@ def reformat_languages(languages)
         style_arr << style
         new_hash[lang] = {
           type_label => type,
-          :style
+          :style => []
         }
       end
       new_hash[lang][:style] = style_arr
