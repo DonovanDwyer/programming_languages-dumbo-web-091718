@@ -2,9 +2,10 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |i, j|
     j.each do |k, l|
-      puts l 
+      new_hash[k] = l
     end
   end
+  puts new_hash
 end
 
 languages = {
