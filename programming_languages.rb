@@ -14,6 +14,7 @@ def reformat_languages(languages)
             :style => style_arr
           }
         end
+        puts style_arr
       end
     end
   end
